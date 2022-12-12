@@ -55,5 +55,6 @@
         android:layout_gravity="center"
         android:backgroundTint="#C6AC8F"
         android:fontFamily="@font/smallprint"
+        android:onClick="onClickList"
         android:text="To-Do List" />
 </LinearLayout>
