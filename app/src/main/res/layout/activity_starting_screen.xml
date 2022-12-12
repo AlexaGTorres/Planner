@@ -32,8 +32,8 @@
 
     <ImageView
         android:id="@+id/bunnyLogo"
-        android:layout_width="300dp"
-        android:layout_height="450dp"
+        android:layout_width="270dp"
+        android:layout_height="400dp"
         app:srcCompat="@drawable/bunny"
         android:scaleType="fitXY"
         android:layout_gravity="center"/>
