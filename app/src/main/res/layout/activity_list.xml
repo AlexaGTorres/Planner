@@ -12,10 +12,31 @@
         android:id="@+id/receivedText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="..."
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:textColor="@color/white"
         android:fontFamily="@font/smallprint"
         android:textSize="30dp"/>
+
+    <EditText
+        android:id="@+id/addToList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/smallprint"
+        android:text="Enter Stuff You Gotta Do"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#C6AC8F"
+        android:fontFamily="@font/smallprint"
+        android:onClick="onClickListToHome"
+        android:text="Go Back Home" />
 </LinearLayout>

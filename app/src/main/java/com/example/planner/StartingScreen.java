@@ -21,9 +21,4 @@ public class StartingScreen extends AppCompatActivity
     {
         startActivity(new Intent(StartingScreen.this, Calender.class));
     }
-
-    public void onClickList (View v)
-    {
-        startActivity(new Intent(StartingScreen.this, List.class));
-    }
 }

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class List extends AppCompatActivity
@@ -23,5 +24,10 @@ public class List extends AppCompatActivity
         Intent intent = getIntent();
         String str = intent.getStringExtra("message_key");
         receiverMsg.setText(str);
+    }
+
+    public void onClickListToHome (View v)
+    {
+        startActivity(new Intent(List.this, StartingScreen.class));
     }
 }
