@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -60,5 +61,10 @@ public class Calender extends AppCompatActivity
                 etDate.setText(date);
             }
         };
+    }
+
+    public void onClickListFromCal (View v)
+    {
+        startActivity(new Intent(Calender.this, List.class));
     }
 }

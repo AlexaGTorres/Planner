@@ -33,6 +33,6 @@
         android:layout_gravity="center"
         android:backgroundTint="#C6AC8F"
         android:fontFamily="@font/smallprint"
-        android:onClick="onClickListFromCalender"
+        android:onClick="onClickListFromCal"
         android:text="Add Date to List" />
 </LinearLayout>
