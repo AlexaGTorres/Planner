@@ -9,6 +9,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -18,7 +19,8 @@ import java.util.Date;
 
 public class Calender extends AppCompatActivity
 {
-    TextView etDate;
+    TextView etDate;//Scrolly thingy
+    Button sendText;//Next screen button thing
     DatePickerDialog.OnDateSetListener setListener;
 
     @SuppressLint("MissingInflatedId")
@@ -32,6 +34,15 @@ public class Calender extends AppCompatActivity
         Date currentTime = Calendar.getInstance().getTime();//Get current date and time for calender
 
         etDate = findViewById(R.id.datePicker);
+        sendText = findViewById(R.id.addDateButton);
+
+        sendText.setOnClickListener(view ->
+        {
+            String str = etDate.getText().toString();//Get the date, convert to string
+            Intent intent = new Intent(getApplicationContext(), List.class);
+            intent.putExtra("message_key", str);
+            startActivity(intent);
+        });
 
         Calendar c = Calendar.getInstance();
         final int year = c.get(Calendar.YEAR);
@@ -61,10 +72,5 @@ public class Calender extends AppCompatActivity
                 etDate.setText(date);
             }
         };
-    }
-
-    public void onClickListFromCal (View v)
-    {
-        startActivity(new Intent(Calender.this, List.class));
     }
 }

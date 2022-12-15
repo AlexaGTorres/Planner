@@ -8,4 +8,14 @@
     android:orientation="vertical"
     tools:context=".List">
 
+    <TextView
+        android:id="@+id/receivedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/smallprint"
+        android:textSize="30dp"/>
 </LinearLayout>
